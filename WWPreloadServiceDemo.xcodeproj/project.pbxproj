@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E602C2D318824A72773752 /* libPods-WWPreloadServiceDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36587F196020D4A72E7F51D9 /* libPods-WWPreloadServiceDemo.a */; };
+		C6401E032754F5590071C6EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6401E022754F5590071C6EC /* AppDelegate.m */; };
+		C6401E092754F5590071C6EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6401E082754F5590071C6EC /* ViewController.m */; };
+		C6401E0E2754F55B0071C6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6401E0D2754F55B0071C6EC /* Assets.xcassets */; };
+		C6401E112754F55B0071C6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6401E0F2754F55B0071C6EC /* LaunchScreen.storyboard */; };
+		C6401E142754F55B0071C6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6401E132754F55B0071C6EC /* main.m */; };
+		C68A736427550E7A0035A94D /* UICollectionView+Preload.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A735827550E7A0035A94D /* UICollectionView+Preload.m */; };
+		C68A736527550E7A0035A94D /* UITableView+Preload.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A735B27550E7A0035A94D /* UITableView+Preload.m */; };
+		C68A736627550E7A0035A94D /* MJRefreshComponent+PreloadFix.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A735C27550E7A0035A94D /* MJRefreshComponent+PreloadFix.m */; };
+		C68A736727550E7A0035A94D /* PreloadUIScrollViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A735E27550E7A0035A94D /* PreloadUIScrollViewDelegate.m */; };
+		C68A736827550E7A0035A94D /* UIScrollView+PreloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A735F27550E7A0035A94D /* UIScrollView+PreloadService.m */; };
+		C68A736927550E7A0035A94D /* NSObject+PreloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = C68A736327550E7A0035A94D /* NSObject+PreloadService.m */; };
+		C6DE12A5275669A200E7D9AC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE12A4275669A200E7D9AC /* TableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36587F196020D4A72E7F51D9 /* libPods-WWPreloadServiceDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WWPreloadServiceDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BFA9D64B0A9D3BE92BE37C /* Pods-WWPreloadServiceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWPreloadServiceDemo.debug.xcconfig"; path = "Target Support Files/Pods-WWPreloadServiceDemo/Pods-WWPreloadServiceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		AF6E31B7B94859B86122F49C /* Pods-WWPreloadServiceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWPreloadServiceDemo.release.xcconfig"; path = "Target Support Files/Pods-WWPreloadServiceDemo/Pods-WWPreloadServiceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C6401DFE2754F5590071C6EC /* WWPreloadServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWPreloadServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6401E012754F5590071C6EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6401E022754F5590071C6EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6401E072754F5590071C6EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C6401E082754F5590071C6EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6401E0D2754F55B0071C6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6401E102754F55B0071C6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6401E122754F55B0071C6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6401E132754F55B0071C6EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C68A735827550E7A0035A94D /* UICollectionView+Preload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Preload.m"; sourceTree = "<group>"; };
+		C68A735927550E7A0035A94D /* UIScrollView+PreloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PreloadService.h"; sourceTree = "<group>"; };
+		C68A735A27550E7A0035A94D /* PreloadUIScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreloadUIScrollViewDelegate.h; sourceTree = "<group>"; };
+		C68A735B27550E7A0035A94D /* UITableView+Preload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Preload.m"; sourceTree = "<group>"; };
+		C68A735C27550E7A0035A94D /* MJRefreshComponent+PreloadFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJRefreshComponent+PreloadFix.m"; sourceTree = "<group>"; };
+		C68A735D27550E7A0035A94D /* NSObject+PreloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PreloadService.h"; sourceTree = "<group>"; };
+		C68A735E27550E7A0035A94D /* PreloadUIScrollViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreloadUIScrollViewDelegate.m; sourceTree = "<group>"; };
+		C68A735F27550E7A0035A94D /* UIScrollView+PreloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PreloadService.m"; sourceTree = "<group>"; };
+		C68A736027550E7A0035A94D /* UICollectionView+Preload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Preload.h"; sourceTree = "<group>"; };
+		C68A736127550E7A0035A94D /* MJRefreshComponent+PreloadFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJRefreshComponent+PreloadFix.h"; sourceTree = "<group>"; };
+		C68A736227550E7A0035A94D /* UITableView+Preload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Preload.h"; sourceTree = "<group>"; };
+		C68A736327550E7A0035A94D /* NSObject+PreloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PreloadService.m"; sourceTree = "<group>"; };
+		C6DE12A3275669A200E7D9AC /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C6DE12A4275669A200E7D9AC /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6401DFB2754F5590071C6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E602C2D318824A72773752 /* libPods-WWPreloadServiceDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D76EC333C8768A34684BAF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36587F196020D4A72E7F51D9 /* libPods-WWPreloadServiceDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81CAEBD5ED17EBBF63CD64F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91BFA9D64B0A9D3BE92BE37C /* Pods-WWPreloadServiceDemo.debug.xcconfig */,
+				AF6E31B7B94859B86122F49C /* Pods-WWPreloadServiceDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6401DF52754F5590071C6EC = {
+			isa = PBXGroup;
+			children = (
+				C6401E002754F5590071C6EC /* WWPreloadServiceDemo */,
+				C6401DFF2754F5590071C6EC /* Products */,
+				81CAEBD5ED17EBBF63CD64F3 /* Pods */,
+				3D76EC333C8768A34684BAF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6401DFF2754F5590071C6EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6401DFE2754F5590071C6EC /* WWPreloadServiceDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6401E002754F5590071C6EC /* WWPreloadServiceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C68A735727550E7A0035A94D /* WWPreloadService */,
+				C6401E1C275500240071C6EC /* Classes */,
+				C6DE12A6275669AB00E7D9AC /* Views */,
+				C6401E0D2754F55B0071C6EC /* Assets.xcassets */,
+				C6401E0F2754F55B0071C6EC /* LaunchScreen.storyboard */,
+				C6401E122754F55B0071C6EC /* Info.plist */,
+				C6401E132754F55B0071C6EC /* main.m */,
+			);
+			path = WWPreloadServiceDemo;
+			sourceTree = "<group>";
+		};
+		C6401E1C275500240071C6EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6401E012754F5590071C6EC /* AppDelegate.h */,
+				C6401E022754F5590071C6EC /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C68A735727550E7A0035A94D /* WWPreloadService */ = {
+			isa = PBXGroup;
+			children = (
+				C68A735D27550E7A0035A94D /* NSObject+PreloadService.h */,
+				C68A736327550E7A0035A94D /* NSObject+PreloadService.m */,
+				C68A735A27550E7A0035A94D /* PreloadUIScrollViewDelegate.h */,
+				C68A735E27550E7A0035A94D /* PreloadUIScrollViewDelegate.m */,
+				C68A735927550E7A0035A94D /* UIScrollView+PreloadService.h */,
+				C68A735F27550E7A0035A94D /* UIScrollView+PreloadService.m */,
+				C68A736227550E7A0035A94D /* UITableView+Preload.h */,
+				C68A735B27550E7A0035A94D /* UITableView+Preload.m */,
+				C68A736027550E7A0035A94D /* UICollectionView+Preload.h */,
+				C68A735827550E7A0035A94D /* UICollectionView+Preload.m */,
+				C68A736127550E7A0035A94D /* MJRefreshComponent+PreloadFix.h */,
+				C68A735C27550E7A0035A94D /* MJRefreshComponent+PreloadFix.m */,
+			);
+			path = WWPreloadService;
+			sourceTree = SOURCE_ROOT;
+		};
+		C6DE12A6275669AB00E7D9AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6401E072754F5590071C6EC /* ViewController.h */,
+				C6401E082754F5590071C6EC /* ViewController.m */,
+				C6DE12A3275669A200E7D9AC /* TableViewController.h */,
+				C6DE12A4275669A200E7D9AC /* TableViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6401DFD2754F5590071C6EC /* WWPreloadServiceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6401E172754F55B0071C6EC /* Build configuration list for PBXNativeTarget "WWPreloadServiceDemo" */;
+			buildPhases = (
+				52496FD9A2BBF5CD7468CC2D /* [CP] Check Pods Manifest.lock */,
+				C6401DFA2754F5590071C6EC /* Sources */,
+				C6401DFB2754F5590071C6EC /* Frameworks */,
+				C6401DFC2754F5590071C6EC /* Resources */,
+				F6C143C94179E4A083446389 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWPreloadServiceDemo;
+			productName = WWPreloadServiceDemo;
+			productReference = C6401DFE2754F5590071C6EC /* WWPreloadServiceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6401DF62754F5590071C6EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C6401DFD2754F5590071C6EC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = C6401DF92754F5590071C6EC /* Build configuration list for PBXProject "WWPreloadServiceDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6401DF52754F5590071C6EC;
+			productRefGroup = C6401DFF2754F5590071C6EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6401DFD2754F5590071C6EC /* WWPreloadServiceDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6401DFC2754F5590071C6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6401E112754F55B0071C6EC /* LaunchScreen.storyboard in Resources */,
+				C6401E0E2754F55B0071C6EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52496FD9A2BBF5CD7468CC2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWPreloadServiceDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C143C94179E4A083446389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WWPreloadServiceDemo/Pods-WWPreloadServiceDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WWPreloadServiceDemo/Pods-WWPreloadServiceDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WWPreloadServiceDemo/Pods-WWPreloadServiceDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6401DFA2754F5590071C6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68A736827550E7A0035A94D /* UIScrollView+PreloadService.m in Sources */,
+				C68A736727550E7A0035A94D /* PreloadUIScrollViewDelegate.m in Sources */,
+				C68A736427550E7A0035A94D /* UICollectionView+Preload.m in Sources */,
+				C6DE12A5275669A200E7D9AC /* TableViewController.m in Sources */,
+				C68A736927550E7A0035A94D /* NSObject+PreloadService.m in Sources */,
+				C68A736627550E7A0035A94D /* MJRefreshComponent+PreloadFix.m in Sources */,
+				C6401E092754F5590071C6EC /* ViewController.m in Sources */,
+				C68A736527550E7A0035A94D /* UITableView+Preload.m in Sources */,
+				C6401E032754F5590071C6EC /* AppDelegate.m in Sources */,
+				C6401E142754F55B0071C6EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6401E0F2754F55B0071C6EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6401E102754F55B0071C6EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6401E152754F55B0071C6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6401E162754F55B0071C6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6401E182754F55B0071C6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91BFA9D64B0A9D3BE92BE37C /* Pods-WWPreloadServiceDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42LU364YZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WWPreloadServiceDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foyoodo.WWPreloadServiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6401E192754F55B0071C6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6E31B7B94859B86122F49C /* Pods-WWPreloadServiceDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42LU364YZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WWPreloadServiceDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foyoodo.WWPreloadServiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6401DF92754F5590071C6EC /* Build configuration list for PBXProject "WWPreloadServiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6401E152754F55B0071C6EC /* Debug */,
+				C6401E162754F55B0071C6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6401E172754F55B0071C6EC /* Build configuration list for PBXNativeTarget "WWPreloadServiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6401E182754F55B0071C6EC /* Debug */,
+				C6401E192754F55B0071C6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6401DF62754F5590071C6EC /* Project object */;
+}
